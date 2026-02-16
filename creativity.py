@@ -229,7 +229,7 @@ div[data-baseweb="notification"] p {{
 # --- DATA ENGINE ---
 @st.cache_data
 def load_and_clean():
-    zip_path = r"zip_path = "Online_Retail.csv.zip"
+    zip_path = "Online_Retail.csv.zip"
     try:
         with zipfile.ZipFile(zip_path) as z:
             with z.open("Online_Retail.csv") as f:
@@ -1088,4 +1088,5 @@ st.markdown(f"""
     </div>
 
 """, unsafe_allow_html=True)
+
 
